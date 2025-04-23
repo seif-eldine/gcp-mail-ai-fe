@@ -1,0 +1,9 @@
+<div class="sidebar">
+
+    @for (todoCategory of todosCategories(); track todoCategory) {
+    <div class="item" [ngClass]="{active: activeItem() === todoCategory}" (click)="selectCategory(todoCategory)">
+        <i>icon</i> <span class="todo-category-name">{{todoCategory}}</span>
+    </div>
+
+    }
+</div>

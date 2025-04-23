@@ -1,0 +1,6 @@
+<div class="mail-home">
+
+    <app-mail-sidebar (categorySelected)="setCategory($event)"></app-mail-sidebar>
+    <app-mail-view [todos]="filteredTodos()"></app-mail-view>
+
+</div>

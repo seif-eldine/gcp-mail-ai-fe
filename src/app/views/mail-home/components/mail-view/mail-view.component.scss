@@ -1,0 +1,82 @@
+/* Page Wrapper */
+.page-wrapper {
+    padding: var(--padding-primary);
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+h3 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Todo Item Container */
+.todo-item {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+/* Hover effect for the entire todo item */
+.todo-item:hover {
+    background-color: #f1f1f1;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Checkbox Styles */
+.todo-checkbox {
+    margin-right: 15px;
+    accent-color: #4caf50; /* Custom color for checkbox */
+    transform: scale(1.2);  /* Slightly larger checkbox */
+}
+
+/* Todo Title Text */
+.todo-title {
+    font-size: 18px;
+    color: #333;
+    transition: text-decoration 0.3s ease;  /* Smooth transition for line-through */
+}
+
+/* Strikethrough when checkbox is checked */
+.todo-checkbox:checked + .todo-title {
+    text-decoration: line-through;
+    color: #999;
+}
+
+/* Prevent line-through from disappearing when hovering over todo item */
+.todo-item:hover .todo-title {
+    color: #333;  /* Keep color normal, no line-through when hovering */
+    text-decoration: inherit; /* Don't remove line-through when hovering */
+}
+
+/* Additional Accessibility & Usability Tweaks */
+.todo-item {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.todo-item input[type="checkbox"] {
+    width: 24px;
+    height: 24px;
+    margin: 10px;
+}
+
+.todo-item span {
+    flex: 1;
+    font-size: 16px;
+    color: #333;
+    cursor: pointer;
+}
+
+/* Hover effect for the checkbox */
+.todo-item input[type="checkbox"]:hover {
+    background-color: #e0e0e0;
+}

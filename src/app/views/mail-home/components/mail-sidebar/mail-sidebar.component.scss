@@ -1,0 +1,27 @@
+
+
+.sidebar{
+    height: 100%;
+    padding: 12px;
+    box-shadow: var(--box-shadow-primary);
+
+    background-color: white;
+
+    .item{
+
+        padding: 15px 10px;
+        cursor: pointer;
+
+        &:hover{
+            background-color: #d2eaff;
+        }
+
+        .todo-category-name{
+            margin-inline: 10px;
+        }
+    }
+}
+
+.item.active{
+    background-color: #d2eaff;
+}

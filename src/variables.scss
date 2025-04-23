@@ -1,0 +1,52 @@
+:root {
+    --primary-color: #11009b;
+    --secondary-color: #446cf6;
+    --box-shadow-primary: 2px 0 5px rgba(0, 0, 0, 0.2);
+    --border-radius-primary: 4px;
+
+    --padding-primary: 12px;
+
+    // **Danger Color (ngPrime-style)**
+    --danger-red: #f44336;
+    /* Base red color for danger */
+    --danger-red-hover: #e53935;
+    /* Darker red for hover */
+    --danger-red-active: #d32f2f;
+    /* Even darker red for active */
+
+    // **Disabled State**
+    --disabled-color: #dcdcdc;
+    --disabled-text-color: #a1a1a1;
+
+    // **Typography**
+    --font-size-base: 1rem; // 16px
+    --font-size-lg: 1.125rem; // 18px
+    --font-size-sm: 0.875rem; // 14px
+    --font-size-xs: 0.7rem; // 14px
+    --line-height-base: 1.5;
+
+    // **Spacing**
+    --spacing-xs: 0.25rem;
+    --spacing-sm: 0.5rem;
+    --spacing-md: 1rem;
+    --spacing-lg: 2rem;
+    --spacing-xl: 4rem;
+
+    // **Borders**
+    --border-radius-primary: 0.25rem; // 4px
+
+    // **States**
+    --hover-opacity: 0.8;
+    --focus-border-color: var(--primary-color);
+    --active-bg-color: var(--primary-cobalt-200);
+
+    // **Disabled State**
+    --disabled-color: #dcdcdc;
+
+    // Breakpoints as CSS variables
+    // --breakpoint-xs: 575.98px;
+    // --breakpoint-sm: 767.98px;
+    // --breakpoint-md: 991.98px;
+    // --breakpoint-lg: 1199.98px;
+    // --breakpoint-xl: 1399.98px;
+}

@@ -1,9 +1,13 @@
 <div class="sidebar">
-
-    @for (todoCategory of todosCategories(); track todoCategory) {
-    <div class="item" [ngClass]="{active: activeItem() === todoCategory}" (click)="selectCategory(todoCategory)">
-        <i>icon</i> <span class="todo-category-name">{{todoCategory}}</span>
-    </div>
-
+    @for (todoCategory of todosCategories(); track todoCategory.name) {
+      <div
+        class="item"
+        [ngClass]="{ active: activeItem() === todoCategory.name }"
+        (click)="selectCategory(todoCategory.name)"
+      >
+        <i class="{{ todoCategory.icon }}"></i>
+        <span class="todo-category-name">{{ todoCategory.name }}</span>
+      </div>
     }
-</div>
+  </div>
+  

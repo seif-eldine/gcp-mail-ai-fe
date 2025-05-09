@@ -8,3 +8,7 @@ export interface Todo {
 
 export type State = 'done' | 'canceled' | 'pending';
 export type Category = 'important' | 'average' | 'urgent' | 'futuristic'
+export interface CategoryItem {
+    name: Category;
+    icon: string
+}

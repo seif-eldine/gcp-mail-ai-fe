@@ -1,27 +1,27 @@
-
-
-.sidebar{
+.sidebar {
     height: 100%;
+    font-size: .9rem;
     padding: 12px;
     box-shadow: var(--box-shadow-primary);
-
     background-color: white;
+    color: #5d5d5d;
 
-    .item{
+    .item {
 
         padding: 15px 10px;
         cursor: pointer;
 
-        &:hover{
+        &:hover {
             background-color: #d2eaff;
         }
 
-        .todo-category-name{
+        .todo-category-name {
             margin-inline: 10px;
         }
     }
 }
 
-.item.active{
+.item.active {
     background-color: #d2eaff;
+    color: #114ee4;
 }

@@ -1,5 +1,5 @@
 import { Component, OnInit, WritableSignal, output, signal } from '@angular/core';
-import { Category } from '../../../../shared/models/todo';
+import { Category, CategoryItem } from '../../../../shared/models/todo';
 import { AiModelService } from '../../../../shared/services/ai-model';
 
 @Component({
@@ -13,11 +13,11 @@ export class MailSidebarComponent {
   activeItem = signal<Category>('important');
   categorySelected = output<Category>();
 
-  todosCategories: WritableSignal<Category[]> = signal([
-    'important',
-    'futuristic',
-    'urgent',
-    'average'
+  todosCategories: WritableSignal<CategoryItem[]> = signal([
+    { name: 'important', icon: 'fa-solid fa-star' },
+    { name: 'futuristic', icon: 'fa-solid fa-robot' },
+    { name: 'urgent', icon: 'fa-solid fa-triangle-exclamation' },
+    { name: 'average', icon: 'fa-solid fa-inbox' },
   ])
 
   selectCategory(category: Category) {
